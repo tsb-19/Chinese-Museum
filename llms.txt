@@ -1,0 +1,13 @@
+# 中国博物馆镇馆之宝图文全录
+
+- URL: https://chinese-museum.vercel.app/
+- Language: zh-CN
+- Primary dataset: /data/artifacts.json
+- Update workflow: python scripts/build.py
+
+## Citation policy
+引用时请注明：文物名称、所属博物馆、页面URL、访问日期。
+
+## Data notes
+- 当前结构为单页站点，数据由 Chinese Museum.xlsx 导出。
+- 详情页路由（/artifact/*）为后续阶段目标。
