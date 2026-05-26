@@ -25,7 +25,7 @@
 <meta name="twitter:image" content="https://chinese-museum.vercel.app/assets/image-fallback.svg"/>
 <meta name="theme-color" content="#14532D"/>
 <meta name="format-detection" content="telephone=no"/>
-<link rel="manifest" href="/site.webmanifest"/>
+<link rel="manifest" href="site.webmanifest"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -5028,7 +5028,7 @@
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+  
 </head>
 <body class="min-h-screen">
 <header class="nature-header">
@@ -15000,7 +15000,7 @@
       }
       
       // 3. 非关键任务 - 延迟执行
-      scheduleIdleTask(() => {
+      scheduleIdleTask(async () => {
         initTableImages();
         
         // 卡片画廊
