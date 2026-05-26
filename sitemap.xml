@@ -169,7 +169,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://chinese-museum.vercel.app/museum/nanping.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://chinese-museum.vercel.app/museum/haihunhou.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chinese-museum.vercel.app/museum/nanyuewang.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -746,6 +758,12 @@
   </url>
   <url>
     <loc>https://chinese-museum.vercel.app/museum/guizhou-minzu.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://chinese-museum.vercel.app/museum/liaoshangjing.html</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
