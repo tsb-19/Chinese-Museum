@@ -1,0 +1,16 @@
+{
+  "name": "中国博物馆镇馆之宝图文全录",
+  "short_name": "中国博物馆镇馆之宝",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F0FDF4",
+  "theme_color": "#14532D",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/assets/image-fallback.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
