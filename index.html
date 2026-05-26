@@ -5052,7 +5052,7 @@
 
 <!-- Language Switcher -->
 <div style="margin-top: 1rem;">
-  <button id="langToggleBtn" onclick="toggleLanguage()" class="px-4 py-1.5 rounded-full text-sm font-medium transition-all" style="background: rgba(255,255,255,0.9); color: #059669; border: 1px solid #059669; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
+  <button id="langToggleBtn" aria-label="Toggle Language" onclick="toggleLanguage()" class="px-4 py-1.5 rounded-full text-sm font-medium transition-all" style="background: rgba(255,255,255,0.9); color: #059669; border: 1px solid #059669; box-shadow: 0 2px 4px rgba(0,0,0,0.05); cursor: pointer;">
     <span class="mr-1">🌐</span> 切换到英文版 (Switch to English)
   </button>
 </div>
@@ -13943,7 +13943,7 @@
 <div class="mb-6">
 <div class="relative max-w-lg">
 <svg class="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2" fill="none" stroke="currentColor" stroke-width="2" style="color: #4D7C0F;" viewbox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
-<input class="w-full rounded-2xl border-2 py-3 pl-12 pr-4 shadow-sm transition-all focus:outline-none focus:ring-4" id="searchInput" placeholder="搜索名称或标签... / Search name or tag..." style="border-color: rgba(5,150,105,0.15); background: rgba(255,255,255,0.85); color: #14532D;" type="text"/>
+<input aria-label="Search" class="w-full rounded-2xl border-2 py-3 pl-12 pr-4 shadow-sm transition-all focus:outline-none focus:ring-4" id="searchInput" placeholder="搜索名称或标签..." style="border-color: rgba(5,150,105,0.15); background: rgba(255,255,255,0.85); color: #14532D;" type="text"/>
 </div>
 </div>
 <!-- Tag Filter -->
@@ -13974,14 +13974,14 @@
 <!-- Lightbox Modal -->
 <div class="fixed inset-0 z-50 hidden items-center justify-center lightbox-backdrop" id="lightbox" style="display:none !important;">
 <!-- Close Button -->
-<button class="absolute right-2 sm:right-4 top-2 sm:top-4 z-10 rounded-full p-2 sm:p-3 shadow-lg transition-all hover:scale-110" onclick="closeLightbox()" style="background: rgba(255,255,255,0.85); color: #14532D;">
+<button class="absolute right-2 sm:right-4 top-2 sm:top-4 z-10 rounded-full p-2 sm:p-3 shadow-lg transition-all hover:scale-110" aria-label="Close Lightbox" onclick="closeLightbox()" style="background: rgba(255,255,255,0.85); color: #14532D;">
 <svg class="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></svg>
 </button>
 <!-- Nav Arrows -->
-<button class="absolute left-2 sm:left-4 top-1/3 lg:top-1/2 z-10 -translate-y-1/2 rounded-full p-2 sm:p-4 shadow-lg transition-all hover:scale-110" id="prevBtn" onclick="prevImage()" style="background: rgba(255,255,255,0.85); color: #14532D;">
+<button class="absolute left-2 sm:left-4 top-1/3 lg:top-1/2 z-10 -translate-y-1/2 rounded-full p-2 sm:p-4 shadow-lg transition-all hover:scale-110" id="prevBtn" aria-label="Previous Image" onclick="prevImage()" style="background: rgba(255,255,255,0.85); color: #14532D;">
 <svg class="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg>
 </button>
-<button class="absolute right-2 sm:right-4 top-1/3 lg:top-1/2 z-10 -translate-y-1/2 rounded-full p-2 sm:p-4 shadow-lg transition-all hover:scale-110" id="nextBtn" onclick="nextImage()" style="background: rgba(255,255,255,0.85); color: #14532D;">
+<button class="absolute right-2 sm:right-4 top-1/3 lg:top-1/2 z-10 -translate-y-1/2 rounded-full p-2 sm:p-4 shadow-lg transition-all hover:scale-110" id="nextBtn" aria-label="Next Image" onclick="nextImage()" style="background: rgba(255,255,255,0.85); color: #14532D;">
 <svg class="h-5 w-5 sm:h-6 sm:w-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg>
 </button>
 <!-- Modal Content -->
@@ -14042,11 +14042,11 @@
 <!-- Simple Image Viewer for Table Images -->
 <div class="fixed inset-0 z-50 hidden items-center justify-center image-viewer-backdrop" id="imageViewer" onclick="closeImageViewer()" style="display:none !important;">
 <!-- Close Button -->
-<button class="absolute right-3 top-3 z-10 rounded-full p-2 shadow-lg transition-all hover:scale-110" onclick="closeImageViewer()" style="background: rgba(255,255,255,0.85); color: #14532D;">
+<button class="absolute right-3 top-3 z-10 rounded-full p-2 shadow-lg transition-all hover:scale-110" aria-label="Close Image Viewer" onclick="closeImageViewer()" style="background: rgba(255,255,255,0.85); color: #14532D;">
 <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></svg>
 </button>
 <!-- Download Button -->
-<button class="absolute right-16 top-3 z-10 rounded-full p-2 shadow-lg transition-all hover:scale-110" id="imageViewerDownload" onclick="event.stopPropagation(); downloadImage();" style="background: rgba(255,255,255,0.85); color: #14532D;">
+<button class="absolute right-16 top-3 z-10 rounded-full p-2 shadow-lg transition-all hover:scale-110" id="imageViewerDownload" aria-label="Download Image" onclick="event.stopPropagation(); downloadImage();" style="background: rgba(255,255,255,0.85); color: #14532D;">
 <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
 </button>
 <!-- Disclaimer Toast -->
@@ -14514,7 +14514,7 @@
       const displayTags = showAllTags ? tags : tags.slice(0, 12);
       displayTags.forEach(([tag, count]) => {
         html += '<button onclick="filterByTag(\'' + tag.replace(/'/g, "\\'") + '\')" class="px-3 py-1.5 rounded-full text-sm transition-all" style="' + 
-          (activeTag === tag ? 'background: ' + THEME.primary + '; color: white;' : 'background: ' + THEME.surface + '; color: ' + THEME.textPrimary + ';') + '">' + tag + ' <span class="text-xs opacity-70">(' + count + ')</span></button>';
+          (activeTag === tag ? 'background: ' + THEME.primary + '; color: white;' : 'background: ' + THEME.surface + '; color: ' + THEME.textPrimary + ';') + '">' + translateLabel(tag) + ' <span class="text-xs opacity-70">(' + count + ')</span></button>';
       });
       
       if (tags.length > 12) {
@@ -14595,8 +14595,8 @@
           </div>
           <div class="p-3">
             <h3 class="font-semibold truncate text-sm" style="color: ${THEME.textPrimary};">${item.name}</h3>
-            ${item.subtitle ? '<p class="text-xs italic truncate" style="color: ' + THEME.textMuted + ';">' + item.subtitle + '</p>' : ''}
-            ${item.tags && item.tags.length > 0 ? '<div class="mt-2 flex flex-wrap gap-1">' + item.tags.slice(0, 2).map(tag => '<span class="inline-block rounded-full px-2 py-0.5 text-[10px]" style="' + getTagStyle(tag) + '">' + tag + '</span>').join('') + '</div>' : ''}
+            ${item.subtitle ? '<p class="text-xs italic truncate" style="color: ' + THEME.textMuted + ';">' + translateLabel(item.subtitle) + '</p>' : ''}
+            ${item.tags && item.tags.length > 0 ? '<div class="mt-2 flex flex-wrap gap-1">' + item.tags.slice(0, 2).map(tag => '<span class="inline-block rounded-full px-2 py-0.5 text-[10px]" style="' + getTagStyle(tag) + '">' + translateLabel(tag) + '</span>').join('') + '</div>' : ''}
             ${item.links && item.links.length > 0 ? '<div class="mt-2 flex flex-wrap gap-1">' + item.links.slice(0, 3).map(link => '<a href="' + link.url + '" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] transition-all hover:opacity-80" style="background: ' + THEME.surface + '; color: ' + THEME.textMuted + '; border: 1px solid rgba(0,0,0,0.1);">[' + link.text + ']</a>').join('') + (item.links.length > 3 ? '<span class="rounded-full px-2 py-0.5 text-[10px]" style="background: ' + THEME.surface + '; color: ' + THEME.textMuted + ';">+' + (item.links.length - 3) + '</span>' : '') + '</div>' : ''}
           </div>
         </div>
@@ -14627,7 +14627,7 @@
       const img = currentItem.images[currentImageIndex];
       document.getElementById('lightboxImage').src = img?.url || '';
       document.getElementById('lightboxTitle').textContent = currentItem.name;
-      document.getElementById('lightboxSubtitle').textContent = currentItem.subtitle || '';
+      document.getElementById('lightboxSubtitle').textContent = translateLabel(currentItem.subtitle) || '';
       document.getElementById('lightboxLink').href = img?.url || '#';
       document.getElementById('imageCounter').textContent = `${currentImageIndex + 1} / ${currentItem.images.length}`;
       
@@ -14635,7 +14635,7 @@
       const tagsContainer = document.getElementById('lightboxTags');
       if (currentItem.tags && currentItem.tags.length > 0) {
         tagsContainer.innerHTML = currentItem.tags.map(tag => 
-          '<span class="inline-block rounded-full px-3 py-1 text-xs" style="' + getTagStyle(tag) + '">' + tag + '</span>'
+          '<span class="inline-block rounded-full px-3 py-1 text-xs" style="' + getTagStyle(tag) + '">' + translateLabel(tag) + '</span>'
         ).join('');
         tagsContainer.classList.remove('hidden');
       } else {
@@ -14648,7 +14648,7 @@
         keyInfoContainer.innerHTML = currentItem.keyFields.map(field =>
           `<div class="rounded-lg p-3" style="background: rgba(0,0,0,0.03);">
             <span class="text-xs font-medium" style="color: ${THEME.textMuted};">${translateLabel(field.label)}</span>
-            <p class="mt-1 text-sm font-medium" style="color: ${THEME.textPrimary};">${field.value}</p>
+            <p class="mt-1 text-sm font-medium" style="color: ${THEME.textPrimary};">${translateLabel(field.value)}</p>
           </div>`
         ).join('');
         keyInfoContainer.classList.remove('hidden');
@@ -14661,8 +14661,8 @@
       if (currentItem.otherFields && currentItem.otherFields.length > 0) {
         otherInfoContainer.innerHTML = currentItem.otherFields.map(field =>
           `<div class="text-sm">
-            <span class="font-medium" style="color: ${THEME.textMuted};">${field.label}:</span>
-            <span style="color: ${THEME.textPrimary};">${field.value}</span>
+            <span class="font-medium" style="color: ${THEME.textMuted};">${translateLabel(field.label)}:</span>
+            <span style="color: ${THEME.textPrimary};">${translateLabel(field.value)}</span>
           </div>`
         ).join('');
         otherInfoContainer.classList.remove('hidden');
@@ -14750,10 +14750,57 @@
       '镇馆之宝原因说明': 'Significance',
       '参考文件': 'References',
       '外观与结构特征描述': 'Appearance & Features',
-      '制作工艺技术': 'Craftsmanship'
+      '制作工艺技术': 'Craftsmanship',
+      '青铜': 'Bronze',
+      '西汉': 'Western Han',
+      '唐代': 'Tang Dynasty',
+      '明代': 'Ming Dynasty',
+      '清代': 'Qing Dynasty',
+      '瓷器': 'Porcelain',
+      '东汉': 'Eastern Han',
+      '战国': 'Warring States',
+      '汉代': 'Han Dynasty',
+      '绢本设色': 'Ink and Color on Silk',
+      '元代': 'Yuan Dynasty',
+      '商代': 'Shang Dynasty',
+      '玉': 'Jade',
+      '西周': 'Western Zhou',
+      '北宋': 'Northern Song',
+      '陶瓷': 'Ceramics',
+      '唐': 'Tang',
+      '石': 'Stone',
+      '陶': 'Pottery',
+      '化石': 'Fossil',
+      '南宋': 'Southern Song',
+      '新石器时代': 'Neolithic',
+      '宋代': 'Song Dynasty',
+      '金': 'Gold',
+      '银': 'Silver',
+      '纸': 'Paper',
+      '商代晚期': 'Late Shang Dynasty',
+      '纸本墨书': 'Ink on Paper',
+      '石材': 'Stone Material',
+      '金代': 'Jin Dynasty',
+      '辽代': 'Liao Dynasty',
+      '铜': 'Copper/Bronze',
+      '春秋': 'Spring and Autumn',
+      '绢本': 'Silk',
+      '纸本': 'Paper',
+      '黄金': 'Gold',
+      '五代': 'Five Dynasties',
+      '石质': 'Stone',
+      '明': 'Ming Dynasty',
+      '商代早期': 'Early Shang',
+      '近现代': 'Modern Era',
+      '晋代': 'Jin Dynasty',
+      '竹木简': 'Bamboo/Wood Slips'
     };
     function translateLabel(label) {
+      if (!label) return label;
       if (currentLang === 'en') {
+        if (label.includes(' · ')) {
+          return label.split(' · ').map(part => dict[part] || part).join(' · ');
+        }
         return dict[label] || label;
       }
       return label;
@@ -14780,7 +14827,7 @@
         if (labelRefs) labelRefs.textContent = 'References';
         title.innerHTML = 'Chinese Museum Treasures<br><span style="font-size: 0.7em;">Top 748 Museum Artifacts</span>';
         subtitle.innerHTML = 'Explore 748 Magnificent Ancient Artifacts<br>across Dynasties and Materials';
-        searchInput.placeholder = 'Search by name, tags, or description...';
+        searchInput.placeholder = 'Search by name, tags...';
         emptyStateText.textContent = 'No matching records found';
         emptyStateSubText.textContent = 'Try adjusting your search keywords or filters';
         itemCountSpan.innerHTML = 'Total <span class="font-semibold" id="itemCount" style="color: #14532D;">' + filteredData.length + '</span> records';
@@ -14788,7 +14835,7 @@
         btn.innerHTML = '<span class="mr-1">🌐</span> 切换到英文版 (Switch to English)';
         title.innerHTML = 'Chinese Museum Treasures<br><span style="font-size: 0.7em;">中国各大博物馆镇馆之宝图文全录</span>';
         subtitle.innerHTML = '按博物馆/朝代/材质检索 748 件镇馆之宝（含 511 张高清图）<br>Explore 748 Magnificent Ancient Artifacts';
-        searchInput.placeholder = '搜索名称或标签... / Search name or tag...';
+        searchInput.placeholder = '搜索名称或标签...';
         emptyStateText.textContent = '未找到匹配的内容 / No matching contents found';
         emptyStateSubText.textContent = '尝试调整搜索条件 / Try adjusting the search filter';
         itemCountSpan.innerHTML = '共 / Total <span class="font-semibold" id="itemCount" style="color: #14532D;">' + filteredData.length + '</span> 条记录 / records';
