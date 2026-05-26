@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>博物馆索引 - Chinese Museum Treasures</title>
+<meta name="description" content="中国各大博物馆镇馆之宝完整索引，按省份分类浏览。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://chinese-museum.vercel.app/museum/">
+<script src="https://cdn.tailwindcss.com/3.4.17.js"></script>
+<style>
+  body { font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif; background: #F0FDF4; color: #14532D; }
+  a { color: #059669; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .museum-province-group { margin-bottom: 1.5rem; }
+  .museum-province-title { font-size: 1.1rem; font-weight: 700; color: #14532D; margin-bottom: 0.5rem; padding-bottom: 0.3rem; border-bottom: 2px solid rgba(5,150,105,0.15); }
+  .museum-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .museum-card { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(255,255,255,0.85); border: 1px solid rgba(5,150,105,0.15); border-radius: 0.75rem; transition: all 0.2s; font-size: 0.9rem; }
+  .museum-card:hover { background: rgba(5,150,105,0.08); border-color: rgba(5,150,105,0.3); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-decoration: none; }
+  .museum-count { font-size: 0.75rem; color: #4D7C0F; background: rgba(5,150,105,0.08); padding: 0.15rem 0.5rem; border-radius: 9999px; }
+</style>
+</head>
+<body class="min-h-screen">
+<header style="background: linear-gradient(135deg, #F0FDF4 0%, #05966910 50%, #84CC1608 100%); padding: 2rem 1.5rem; text-align: center;">
+  <a href="/" style="color: #059669; font-size: 0.9rem;">&larr; 返回首页 / Back to Home</a>
+  <h1 style="font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; color: #14532D; margin: 0.5em 0 0.3em;">中国各大博物馆镇馆之宝</h1>
+  <p style="color: #4D7C0F; font-size: 0.95rem;">159 家博物馆 · 748 件文物</p>
+</header>
+<main class="mx-auto px-4 py-6 sm:px-8 lg:px-12" style="max-width: 1200px;">
+<div class="museum-index">
+<div class="museum-province-group">
+<h3 class="museum-province-title">北京 Beijing</h3>
+<div class="museum-list">
+<a href="/museum/gugong.html" class="museum-card"><span class="museum-name">故宫博物院</span><span class="museum-count">19件</span></a>
+<a href="/museum/guojia-bowuguan.html" class="museum-card"><span class="museum-name">中国国家博物馆</span><span class="museum-count">10件</span></a>
+<a href="/museum/shoudu-bowuguan.html" class="museum-card"><span class="museum-name">首都博物馆</span><span class="museum-count">5件</span></a>
+<a href="/museum/ziran-bowuguan.html" class="museum-card"><span class="museum-name">国家自然博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/gudai-jianzhu.html" class="museum-card"><span class="museum-name">北京古代建筑博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">天津 Tianjin</h3>
+<div class="museum-list">
+<a href="/museum/tianjin.html" class="museum-card"><span class="museum-name">天津博物馆</span><span class="museum-count">6件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">河北 Hebei</h3>
+<div class="museum-list">
+<a href="/museum/hebei.html" class="museum-card"><span class="museum-name">河北博物院</span><span class="museum-count">19件</span></a>
+<a href="/museum/dingzhou.html" class="museum-card"><span class="museum-name">定州博物馆</span><span class="museum-count">8件</span></a>
+<a href="/museum/beichao-kaogu.html" class="museum-card"><span class="museum-name">磁县北朝考古博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/zhengding.html" class="museum-card"><span class="museum-name">正定县博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/qianan.html" class="museum-card"><span class="museum-name">迁安市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/yecheng.html" class="museum-card"><span class="museum-name">邺城博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/xingyao.html" class="museum-card"><span class="museum-name">临城县邢窑博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/nihewan.html" class="museum-card"><span class="museum-name">泥河湾博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/huanghua.html" class="museum-card"><span class="museum-name">黄骅市博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">山西 Shanxi</h3>
+<div class="museum-list">
+<a href="/museum/shanxi.html" class="museum-card"><span class="museum-name">山西博物院</span><span class="museum-count">6件</span></a>
+<a href="/museum/changzhi.html" class="museum-card"><span class="museum-name">长治市博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/yuncheng.html" class="museum-card"><span class="museum-name">运城博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/jinci.html" class="museum-card"><span class="museum-name">晋祠博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/linfen.html" class="museum-card"><span class="museum-name">临汾市博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">内蒙古 Inner Mongolia</h3>
+<div class="museum-list">
+<a href="/museum/neimenggu.html" class="museum-card"><span class="museum-name">内蒙古博物院</span><span class="museum-count">8件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">辽宁 Liaoning</h3>
+<div class="museum-list">
+<a href="/museum/liaoning.html" class="museum-card"><span class="museum-name">辽宁省博物馆</span><span class="museum-count">19件</span></a>
+<a href="/museum/shenyang-gugong.html" class="museum-card"><span class="museum-name">沈阳故宫博物院</span><span class="museum-count">8件</span></a>
+<a href="/museum/lvshun.html" class="museum-card"><span class="museum-name">旅顺博物馆</span><span class="museum-count">3件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">吉林 Jilin</h3>
+<div class="museum-list">
+<a href="/museum/jilin.html" class="museum-card"><span class="museum-name">吉林省博物院</span><span class="museum-count">13件</span></a>
+<a href="/museum/jilin-manzu.html" class="museum-card"><span class="museum-name">吉林市满族博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/weimang-huanggong.html" class="museum-card"><span class="museum-name">伪满皇宫博物院</span><span class="museum-count">1件</span></a>
+<a href="/museum/jilin-ziran.html" class="museum-card"><span class="museum-name">吉林省自然博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">黑龙江 Heilongjiang</h3>
+<div class="museum-list">
+<a href="/museum/heilongjiang.html" class="museum-card"><span class="museum-name">黑龙江省博物馆</span><span class="museum-count">14件</span></a>
+<a href="/museum/haerbin.html" class="museum-card"><span class="museum-name">哈尔滨市博物馆</span><span class="museum-count">4件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">上海 Shanghai</h3>
+<div class="museum-list">
+<a href="/museum/shanghai.html" class="museum-card"><span class="museum-name">上海博物馆</span><span class="museum-count">10件</span></a>
+<a href="/museum/shanghai-chengshi.html" class="museum-card"><span class="museum-name">上海城市历史发展陈列馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/shanghai-tianwen.html" class="museum-card"><span class="museum-name">上海天文博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/zhonghua-yishu.html" class="museum-card"><span class="museum-name">中华艺术宫</span><span class="museum-count">1件</span></a>
+<a href="/museum/shanghai-lishi.html" class="museum-card"><span class="museum-name">上海市历史博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/shanghai-ziran.html" class="museum-card"><span class="museum-name">上海自然博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">江苏 Jiangsu</h3>
+<div class="museum-list">
+<a href="/museum/nanjing.html" class="museum-card"><span class="museum-name">南京博物院</span><span class="museum-count">32件</span></a>
+<a href="/museum/suzhou.html" class="museum-card"><span class="museum-name">苏州博物馆</span><span class="museum-count">5件</span></a>
+<a href="/museum/yangzhou.html" class="museum-card"><span class="museum-name">扬州博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/changzhou.html" class="museum-card"><span class="museum-name">常州博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/lianyungang.html" class="museum-card"><span class="museum-name">连云港市博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/zhenjiang.html" class="museum-card"><span class="museum-name">镇江博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/nantong.html" class="museum-card"><span class="museum-name">南通博物苑</span><span class="museum-count">1件</span></a>
+<a href="/museum/wuxi.html" class="museum-card"><span class="museum-name">无锡博物院</span><span class="museum-count">1件</span></a>
+<a href="/museum/huaian.html" class="museum-card"><span class="museum-name">淮安市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/xuzhou-bingmayong.html" class="museum-card"><span class="museum-name">徐州汉兵马俑博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/suitang-dayunhe.html" class="museum-card"><span class="museum-name">隋唐大运河文化博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/xuzhou.html" class="museum-card"><span class="museum-name">徐州博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">浙江 Zhejiang</h3>
+<div class="museum-list">
+<a href="/museum/zhejiang.html" class="museum-card"><span class="museum-name">浙江省博物馆</span><span class="museum-count">15件</span></a>
+<a href="/museum/shaoxing.html" class="museum-card"><span class="museum-name">绍兴博物馆</span><span class="museum-count">5件</span></a>
+<a href="/museum/ningbo.html" class="museum-card"><span class="museum-name">宁波博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/wenzhou.html" class="museum-card"><span class="museum-name">温州博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/zhejiang-ziran.html" class="museum-card"><span class="museum-name">浙江自然博物院</span><span class="museum-count">2件</span></a>
+<a href="/museum/hangzhou-xihu.html" class="museum-card"><span class="museum-name">杭州西湖博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/huzhou.html" class="museum-card"><span class="museum-name">湖州市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/hangzhou.html" class="museum-card"><span class="museum-name">杭州博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/dongyang.html" class="museum-card"><span class="museum-name">东阳市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/jinhua.html" class="museum-card"><span class="museum-name">金华市博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">安徽 Anhui</h3>
+<div class="museum-list">
+<a href="/museum/anhui.html" class="museum-card"><span class="museum-name">安徽博物院</span><span class="museum-count">10件</span></a>
+<a href="/museum/anhui-chuwenhua.html" class="museum-card"><span class="museum-name">安徽楚文化博物馆</span><span class="museum-count">7件</span></a>
+<a href="/museum/bengbu.html" class="museum-card"><span class="museum-name">蚌埠市博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">福建 Fujian</h3>
+<div class="museum-list">
+<a href="/museum/fujian.html" class="museum-card"><span class="museum-name">福建博物院</span><span class="museum-count">17件</span></a>
+<a href="/museum/quanzhou-haijiao.html" class="museum-card"><span class="museum-name">泉州海外交通史博物馆</span><span class="museum-count">13件</span></a>
+<a href="/museum/zhangzhou.html" class="museum-card"><span class="museum-name">漳州市博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/fujian-minsu.html" class="museum-card"><span class="museum-name">福建民俗博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/xiamen.html" class="museum-card"><span class="museum-name">厦门市博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/putian.html" class="museum-card"><span class="museum-name">莆田市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/xiamen.html" class="museum-card"><span class="museum-name">厦门博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">江西 Jiangxi</h3>
+<div class="museum-list">
+<a href="/museum/haihunhou.html" class="museum-card"><span class="museum-name">南昌汉代海昏侯国遗址博物馆</span><span class="museum-count">11件</span></a>
+<a href="/museum/jiangxi.html" class="museum-card"><span class="museum-name">江西省博物馆</span><span class="museum-count">8件</span></a>
+<a href="/museum/fuzhou.html" class="museum-card"><span class="museum-name">抚州市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/gaoan.html" class="museum-card"><span class="museum-name">高安市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/badashanren.html" class="museum-card"><span class="museum-name">八大山人纪念馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/jingdezhen-taoci.html" class="museum-card"><span class="museum-name">景德镇中国陶瓷博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/jinggangshan.html" class="museum-card"><span class="museum-name">井冈山革命博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/ruijin.html" class="museum-card"><span class="museum-name">瑞金中央革命根据地纪念馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">山东 Shandong</h3>
+<div class="museum-list">
+<a href="/museum/shandong.html" class="museum-card"><span class="museum-name">山东博物馆</span><span class="museum-count">14件</span></a>
+<a href="/museum/qingdao.html" class="museum-card"><span class="museum-name">青岛市博物馆</span><span class="museum-count">10件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">河南 Henan</h3>
+<div class="museum-list">
+<a href="/museum/henan.html" class="museum-card"><span class="museum-name">河南博物院</span><span class="museum-count">10件</span></a>
+<a href="/museum/henan.html" class="museum-card"><span class="museum-name">河南省博物院</span><span class="museum-count">9件</span></a>
+<a href="/museum/yinxu.html" class="museum-card"><span class="museum-name">殷墟博物馆</span><span class="museum-count">6件</span></a>
+<a href="/museum/luoyang.html" class="museum-card"><span class="museum-name">洛阳博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/kaifeng.html" class="museum-card"><span class="museum-name">开封市博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/shangqiu.html" class="museum-card"><span class="museum-name">商丘博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/nanyang-hanhua.html" class="museum-card"><span class="museum-name">南阳汉画馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/anyang-yinxu.html" class="museum-card"><span class="museum-name">安阳殷墟博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/erlitou.html" class="museum-card"><span class="museum-name">二里头夏都遗址博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/luoyang-gumu.html" class="museum-card"><span class="museum-name">洛阳古墓博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/zhengzhou.html" class="museum-card"><span class="museum-name">郑州博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">湖北 Hubei</h3>
+<div class="museum-list">
+<a href="/museum/hubei.html" class="museum-card"><span class="museum-name">湖北省博物馆</span><span class="museum-count">10件</span></a>
+<a href="/museum/wuhan.html" class="museum-card"><span class="museum-name">武汉博物馆</span><span class="museum-count">6件</span></a>
+<a href="/museum/huazhong-shifan.html" class="museum-card"><span class="museum-name">华中师范大学博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">湖南 Hunan</h3>
+<div class="museum-list">
+<a href="/museum/hunan.html" class="museum-card"><span class="museum-name">湖南省博物馆</span><span class="museum-count">7件</span></a>
+<a href="/museum/hunan.html" class="museum-card"><span class="museum-name">湖南博物院</span><span class="museum-count">6件</span></a>
+<a href="/museum/changsha-jiandu.html" class="museum-card"><span class="museum-name">长沙简牍博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">广东 Guangdong</h3>
+<div class="museum-list">
+<a href="/museum/guangdong.html" class="museum-card"><span class="museum-name">广东省博物馆</span><span class="museum-count">8件</span></a>
+<a href="/museum/shenzhen.html" class="museum-card"><span class="museum-name">深圳博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/guangzhou.html" class="museum-card"><span class="museum-name">广州博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/dongguan.html" class="museum-card"><span class="museum-name">东莞市博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/zhongshan.html" class="museum-card"><span class="museum-name">中山市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/guangdong-haisi.html" class="museum-card"><span class="museum-name">广东海上丝绸之路博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/guangzhou-tielu.html" class="museum-card"><span class="museum-name">广州铁路博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">广西 Guangxi</h3>
+<div class="museum-list">
+<a href="/museum/guangxi.html" class="museum-card"><span class="museum-name">广西壮族自治区博物馆</span><span class="museum-count">12件</span></a>
+<a href="/museum/guangxi-minzu.html" class="museum-card"><span class="museum-name">广西民族博物馆</span><span class="museum-count">2件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">海南 Hainan</h3>
+<div class="museum-list">
+<a href="/museum/hainan.html" class="museum-card"><span class="museum-name">海南省博物馆</span><span class="museum-count">6件</span></a>
+<a href="/museum/hainan-minzu.html" class="museum-card"><span class="museum-name">海南省民族博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/hainan-nanhai.html" class="museum-card"><span class="museum-name">中国（海南）南海博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/sanya-ziran.html" class="museum-card"><span class="museum-name">三亚自然博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/hainan-tielu.html" class="museum-card"><span class="museum-name">海南铁路博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">重庆 Chongqing</h3>
+<div class="museum-list">
+<a href="/museum/chongqing-sanxia.html" class="museum-card"><span class="museum-name">重庆中国三峡博物馆</span><span class="museum-count">27件</span></a>
+<a href="/museum/chongqing-hongyan.html" class="museum-card"><span class="museum-name">重庆红岩革命历史博物馆</span><span class="museum-count">4件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">四川 Sichuan</h3>
+<div class="museum-list">
+<a href="/museum/sichuan.html" class="museum-card"><span class="museum-name">四川博物院</span><span class="museum-count">5件</span></a>
+<a href="/museum/chengdu.html" class="museum-card"><span class="museum-name">成都博物馆</span><span class="museum-count">5件</span></a>
+<a href="/museum/chengdu-jinsha.html" class="museum-card"><span class="museum-name">成都金沙遗址博物馆</span><span class="museum-count">5件</span></a>
+<a href="/museum/dazu-shike.html" class="museum-card"><span class="museum-name">大足石刻博物馆</span><span class="museum-count">5件</span></a>
+<a href="/museum/luojiaba.html" class="museum-card"><span class="museum-name">罗家坝遗址博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/sichuan.html" class="museum-card"><span class="museum-name">四川博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/sanxingdui.html" class="museum-card"><span class="museum-name">三星堆博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/chengdu-wuhou.html" class="museum-card"><span class="museum-name">成都武侯祠博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/chengdu-dufu.html" class="museum-card"><span class="museum-name">成都杜甫草堂博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">贵州 Guizhou</h3>
+<div class="museum-list">
+<a href="/museum/guizhou.html" class="museum-card"><span class="museum-name">贵州省博物馆</span><span class="museum-count">32件</span></a>
+<a href="/museum/guizhou-dizhi.html" class="museum-card"><span class="museum-name">贵州省地质博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/guizhou-minzu.html" class="museum-card"><span class="museum-name">贵州省民族博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/zunyi.html" class="museum-card"><span class="museum-name">遵义市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/pingba.html" class="museum-card"><span class="museum-name">平坝博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/qiandongnan-minzu.html" class="museum-card"><span class="museum-name">黔东南州民族博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/qianxinan.html" class="museum-card"><span class="museum-name">黔西南州博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">云南 Yunnan</h3>
+<div class="museum-list">
+<a href="/museum/yunnan.html" class="museum-card"><span class="museum-name">云南省博物馆</span><span class="museum-count">12件</span></a>
+<a href="/museum/xishuangbanna-minzu.html" class="museum-card"><span class="museum-name">西双版纳民族博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/lijiang.html" class="museum-card"><span class="museum-name">丽江市博物院</span><span class="museum-count">3件</span></a>
+<a href="/museum/kunming.html" class="museum-card"><span class="museum-name">昆明市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/baoshan.html" class="museum-card"><span class="museum-name">保山市博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/dali.html" class="museum-card"><span class="museum-name">大理白族自治州博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">西藏 Tibet</h3>
+<div class="museum-list">
+<a href="/museum/xizang.html" class="museum-card"><span class="museum-name">西藏博物馆</span><span class="museum-count">2件</span></a>
+<a href="/museum/xili-minzu.html" class="museum-card"><span class="museum-name">西黎民族文化展示馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">陕西 Shaanxi</h3>
+<div class="museum-list">
+<a href="/museum/famensi.html" class="museum-card"><span class="museum-name">法门寺博物馆</span><span class="museum-count">15件</span></a>
+<a href="/museum/baoji-qingtongqi.html" class="museum-card"><span class="museum-name">宝鸡青铜器博物院</span><span class="museum-count">10件</span></a>
+<a href="/museum/shaanxi-lishi.html" class="museum-card"><span class="museum-name">陕西历史博物馆</span><span class="museum-count">7件</span></a>
+<a href="/museum/xianyang.html" class="museum-card"><span class="museum-name">咸阳博物院</span><span class="museum-count">5件</span></a>
+<a href="/museum/xian-beilin.html" class="museum-card"><span class="museum-name">西安碑林博物馆</span><span class="museum-count">4件</span></a>
+<a href="/museum/xian.html" class="museum-card"><span class="museum-name">西安博物院</span><span class="museum-count">4件</span></a>
+<a href="/museum/qinshihuang-ling.html" class="museum-card"><span class="museum-name">秦始皇帝陵博物院</span><span class="museum-count">2件</span></a>
+<a href="/museum/yangling.html" class="museum-card"><span class="museum-name">汉景帝阳陵博物院</span><span class="museum-count">2件</span></a>
+<a href="/museum/shaanxi-kaogu.html" class="museum-card"><span class="museum-name">陕西考古博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">甘肃 Gansu</h3>
+<div class="museum-list">
+<a href="/museum/gansu.html" class="museum-card"><span class="museum-name">甘肃省博物馆</span><span class="museum-count">21件</span></a>
+<a href="/museum/gansu-jiandu.html" class="museum-card"><span class="museum-name">甘肃简牍博物馆</span><span class="museum-count">3件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">青海 Qinghai</h3>
+<div class="museum-list">
+<a href="/museum/qinghai.html" class="museum-card"><span class="museum-name">青海省博物馆</span><span class="museum-count">11件</span></a>
+<a href="/museum/qinghai-zangyiyao.html" class="museum-card"><span class="museum-name">青海藏医药文化博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/qinghai-yuanzicheng.html" class="museum-card"><span class="museum-name">青海原子城纪念馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">宁夏 Ningxia</h3>
+<div class="museum-list">
+<a href="/museum/ningxia.html" class="museum-card"><span class="museum-name">宁夏博物馆</span><span class="museum-count">3件</span></a>
+<a href="/museum/ningxia.html" class="museum-card"><span class="museum-name">宁夏回族自治区博物馆</span><span class="museum-count">3件</span></a>
+</div>
+</div>
+<div class="museum-province-group">
+<h3 class="museum-province-title">新疆 Xinjiang</h3>
+<div class="museum-list">
+<a href="/museum/xinjiang.html" class="museum-card"><span class="museum-name">新疆维吾尔自治区博物馆</span><span class="museum-count">9件</span></a>
+<a href="/museum/xinjiang.html" class="museum-card"><span class="museum-name">新疆博物馆</span><span class="museum-count">1件</span></a>
+<a href="/museum/kashi.html" class="museum-card"><span class="museum-name">喀什地区博物馆</span><span class="museum-count">1件</span></a>
+</div>
+</div>
+</div>
+</main>
+<footer style="text-align:center; padding:2rem; color:#4D7C0F; font-size:0.85rem; border-top:1px solid rgba(5,150,105,0.15);">
+  <a href="/" style="color:#059669;">返回首页 / Back to Home</a>
+</footer>
+</body>
+</html>

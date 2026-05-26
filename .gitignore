@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+museum/_index.html
+museum/_slug_map.json
