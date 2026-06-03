@@ -321,22 +321,33 @@ def generate_museum_page(museum_name, artifacts, slug):
   <td style="font-size:0.85em;">{ref_cell}</td>
 </tr>"""
 
+    description = f"{museum_name}的{count}件镇馆之宝，包含文物图片、历史年代、主要材质、外观特征、制作工艺与参考资料。"
+
     html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{museum_name} 镇馆之宝 - Chinese Museum Treasures</title>
-<meta name="description" content="{museum_name}的{count}件镇馆之宝，包含文物图片、年代、材质、工艺等详细信息。">
+<meta name="description" content="{description}">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://chinese-museum.vercel.app/museum/{slug}.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{museum_name} 镇馆之宝 - Chinese Museum Treasures">
+<meta property="og:description" content="{description}">
+<meta property="og:url" content="https://chinese-museum.vercel.app/museum/{slug}.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{museum_name} 镇馆之宝 - Chinese Museum Treasures">
+<meta name="twitter:description" content="{description}">
 <script src="https://cdn.tailwindcss.com/3.4.17.js"></script>
 <style>
   body {{ font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif; background: #F0FDF4; color: #14532D; }}
+  .page-shell {{ width: 100%; max-width: 1400px; margin: 0 auto; }}
   .table-scroll-wrapper {{ overflow-x: auto; -webkit-overflow-scrolling: touch; }}
   table {{ width: 100%; border-collapse: collapse; font-size: 0.9rem; }}
-  th {{ background: rgba(5,150,105,0.08); font-weight: 600; text-align: left; padding: 0.75rem; white-space: nowrap; }}
-  td {{ padding: 0.75rem; border-bottom: 1px solid rgba(5,150,105,0.1); vertical-align: top; }}
+  th {{ background: rgba(5,150,105,0.08); font-weight: 600; text-align: center; padding: 0.75rem; white-space: nowrap; }}
+  td {{ padding: 0.75rem; border-bottom: 1px solid rgba(5,150,105,0.1); vertical-align: middle; text-align: center; }}
+  td:nth-child(4) {{ text-align: left; vertical-align: top; }}
   tr:hover td {{ background: rgba(5,150,105,0.04); }}
   a {{ color: #059669; text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
@@ -348,7 +359,7 @@ def generate_museum_page(museum_name, artifacts, slug):
   <h1 style="font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; color: #14532D; margin: 0.5em 0 0.3em;">{museum_name}</h1>
   <p style="color: #4D7C0F; font-size: 0.95rem;">{province + ' · ' if province else ''}{count} 件镇馆之宝</p>
 </header>
-<main class="mx-auto px-4 py-6 sm:px-8 lg:px-12" style="max-width: 1400px;">
+<main class="page-shell px-4 py-6 sm:px-8 lg:px-12" style="max-width: 1400px; margin: 0 auto;">
   <div class="table-scroll-wrapper">
     <table>
       <thead>
@@ -437,23 +448,33 @@ def main():
 
     # Generate index HTML
     index_html = generate_museum_index(museums_by_province)
-    index_path = os.path.join(MUSEUM_DIR, "_index.html")
+    index_path = os.path.join(MUSEUM_DIR, "_index.fragment")
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(index_html)
 
     # Also generate a simple museum index page
+    index_description = "中国各大博物馆镇馆之宝完整索引，按省份分类浏览博物馆与代表性文物目录。"
+
     index_page = f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>博物馆索引 - Chinese Museum Treasures</title>
-<meta name="description" content="中国各大博物馆镇馆之宝完整索引，按省份分类浏览。">
+<meta name="description" content="{index_description}">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://chinese-museum.vercel.app/museum/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="博物馆索引 - Chinese Museum Treasures">
+<meta property="og:description" content="{index_description}">
+<meta property="og:url" content="https://chinese-museum.vercel.app/museum/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博物馆索引 - Chinese Museum Treasures">
+<meta name="twitter:description" content="{index_description}">
 <script src="https://cdn.tailwindcss.com/3.4.17.js"></script>
 <style>
   body {{ font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif; background: #F0FDF4; color: #14532D; }}
+  .page-shell {{ width: 100%; max-width: 1200px; margin: 0 auto; }}
   a {{ color: #059669; text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
   .museum-province-group {{ margin-bottom: 1.5rem; }}
@@ -470,7 +491,7 @@ def main():
   <h1 style="font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; color: #14532D; margin: 0.5em 0 0.3em;">中国各大博物馆镇馆之宝</h1>
   <p style="color: #4D7C0F; font-size: 0.95rem;">{len(by_museum)} 家博物馆 · {len(artifacts)} 件文物</p>
 </header>
-<main class="mx-auto px-4 py-6 sm:px-8 lg:px-12" style="max-width: 1200px;">
+<main class="page-shell px-4 py-6 sm:px-8 lg:px-12" style="max-width: 1200px; margin: 0 auto;">
 {index_html}
 </main>
 <footer style="text-align:center; padding:2rem; color:#4D7C0F; font-size:0.85rem; border-top:1px solid rgba(5,150,105,0.15);">
@@ -484,7 +505,7 @@ def main():
 
     print(f"Generated {pages_generated} museum pages in {MUSEUM_DIR}/")
     print(f"Generated museum index: {MUSEUM_DIR}/index.html")
-    print(f"Index HTML fragment: {MUSEUM_DIR}/_index.html")
+    print(f"Index HTML fragment: {MUSEUM_DIR}/_index.fragment")
 
     # Output slug mapping for reference
     slug_map = {}
